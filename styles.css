@@ -3,7 +3,7 @@
 .cards {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 20px 0 0 0;
 }
 .vanilla-list li,
 .ruled-list li,

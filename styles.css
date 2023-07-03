@@ -236,7 +236,7 @@ header {
 }
 
 .tags-container {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
     margin: 5px 0 0 0;
     display: flex;
@@ -262,7 +262,7 @@ header {
 
 .mongodb-tag {
     background-color: rgb(161, 214, 174);
-    color: rgb(0, 71, 0);
+    color: rgb(0, 88, 0);
 }
 
 .js-tag {
@@ -282,7 +282,7 @@ header {
 
 .selenium-tag {
     background-color: rgb(148, 255, 105);
-    color: rgb(83, 83, 83);
+    color: rgb(0, 88, 40);
 }
 
 .css-tag {

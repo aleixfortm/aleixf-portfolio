@@ -298,7 +298,7 @@ header {
 }
 
 .card-bottom {
-    border-top: 1px solid rgba(87, 87, 87, 0.24);
+    border-top: 1px solid rgba(87, 87, 87, 0.075);
 }
 
 .skillicon1 {

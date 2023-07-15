@@ -243,6 +243,10 @@ header {
     justify-content: center;
 }
 
+.img-gopher {
+    margin-top: 20px;
+}
+
 .tech-tag {
     font-family: 'IBM Plex Mono', monospace;
     width: fit-content;

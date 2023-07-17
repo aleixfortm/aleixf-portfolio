@@ -13,12 +13,18 @@
 <body>
     <article>
       <div class="page__content">
-
         <header>
             <h1 class="page__title">Aleix Fort</h1>    
             <h2 class="page__description">Ambitious engineer and problem solver</h2>
+            <div class="toggle-container">
+                <label class="switch">
+                    <input type="checkbox" id="darkModeToggle">
+                    <span class="slider round"></span>
+                </label>
+                <img class="dark-mode-img" src="img/dark_mode_icon.png" alt="dark mode icon">
+            </div>
+
         </header>
-  
         <div class="main-column">
         <ul class="cards">
             <li class="card">
@@ -30,7 +36,7 @@
 
                         <div class="card-details">
                             <a class="card-details-title" href="https://github.com/aleixfortm/storymous">Storymous</a>
-                            <div class="card-details-description">Storytelling-based social media. A place where people write fiction together.</div>
+                            <div class="card-details-description">Storytelling-based social media, a place where people write fiction together</div>
                             <div class="tags-container">
                                 <div class="tech-tag vue-tag">Vue</div>
                                 <div class="tech-tag python-tag">Python</div>
@@ -49,10 +55,9 @@
                         <img class="img-gopher" src="img/gopher.png">
                     </a>
                     <div class="card-bottom">
-
                         <div class="card-details">
-                            <a class="card-details-title" href="https://github.com/aleixfortm/WOLed">WOLed</a>
-                            <div class="card-details-description">An over-engineered, CLI-based WakeOnLAN tool.</div>
+                            <a class="card-details-title" href="https://github.com/aleixfortm/WOLed">Woled</a>
+                            <div class="card-details-description">An over-engineered, CLI-based WakeOnLAN tool</div>
                             <div class="tags-container">
                                 <div class="tech-tag go-tag">Go</div>
                             </div>
@@ -70,7 +75,7 @@
                     <div class="card-bottom">
                         <div class="card-details">
                             <a class="card-details-title" href="https://github.com/aleixfortm/bomparty-bot">Bombparty Bot</a>
-                            <div class="card-details-description">Bot that plays bombparty games automatically using Selenium.</div>
+                            <div class="card-details-description">Automated webscraping bot that plays bombparty games</div>
                             <div class="tags-container">
                                 <div class="tech-tag python-tag">Python</div>
                                 <div class="tech-tag selenium-tag">Selenium</div>
@@ -105,10 +110,10 @@
   
     <footer>
       <div id="footer-site-nav">
-        <a href="https://github.com/aleixfortm">GitHub</a>
-        <a href="https://www.linkedin.com/in/aleixfortm/">LinkedIn</a>
+        <a href="https://github.com/aleixfortm" class="href1">GitHub</a>
+        <a href="https://www.linkedin.com/in/aleixfortm/" class="href1">LinkedIn</a>
       </div>
     </footer>
-  
+    <script src="darkmode.js"></script>
 </body>
 </html>

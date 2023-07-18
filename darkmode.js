@@ -31,6 +31,9 @@ darkModeToggle.addEventListener('change', () => {
             t.style.color = "white"
             t.style.textShadow = "0px 0px 4px rgba(0, 0, 0, 0.6)";
         })
+        footerNav.forEach((nav) => {
+            nav.style.color = "whitesmoke"
+        })
 
         // change color title
         header1.classList.add("white1")
@@ -59,7 +62,7 @@ darkModeToggle.addEventListener('change', () => {
         header1.classList.remove("white1")
         header2.classList.remove("white2")
         footerNav.forEach((nav) => {
-            nav.style.color = "whitesmoke"
+            nav.style.color = "black"
         })
 
     }

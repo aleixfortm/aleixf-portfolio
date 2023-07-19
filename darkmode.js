@@ -1,18 +1,18 @@
 var darkModeToggle = document.getElementById('darkModeToggle');
-
+const imageElement = document.querySelector('.dark-mode-img');
+const bottomCard = document.querySelectorAll(".card-bottom")
+const cardTitle = document.querySelectorAll(".card-details-title")
+const cardDescription = document.querySelectorAll(".card-details-description")
+const header1 = document.querySelector(".page__title")
+const header2 = document.querySelector(".page__description")
+const tag = document.querySelectorAll(".tech-tag")
+const footerNav = document.querySelectorAll(".href1")
+const cards = document.querySelectorAll(".card-inner")
 
 
 
 darkModeToggle.addEventListener('change', () => {
-    const imageElement = document.querySelector('.dark-mode-img');
-    const bottomCard = document.querySelectorAll(".card-bottom")
-    const cardTitle = document.querySelectorAll(".card-details-title")
-    const cardDescription = document.querySelectorAll(".card-details-description")
-    const header1 = document.querySelector(".page__title")
-    const header2 = document.querySelector(".page__description")
-    const tag = document.querySelectorAll(".tech-tag")
-    const footerNav = document.querySelectorAll(".href1")
-    const cards = document.querySelectorAll(".card-inner")
+
     // Darkmode active
     if (darkModeToggle.checked) {
         // Add the dark-mode class to the body element

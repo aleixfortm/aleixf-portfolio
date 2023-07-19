@@ -1,16 +1,19 @@
-const darkModeToggle = document.getElementById('darkModeToggle');
-const imageElement = document.querySelector('.dark-mode-img');
-const bottomCard = document.querySelectorAll(".card-bottom")
-const cardTitle = document.querySelectorAll(".card-details-title")
-const cardDescription = document.querySelectorAll(".card-details-description")
-const header1 = document.querySelector(".page__title")
-const header2 = document.querySelector(".page__description")
-const tag = document.querySelectorAll(".tech-tag")
-const footerNav = document.querySelectorAll(".href1")
+var darkModeToggle = document.getElementById('darkModeToggle');
+
+
 
 
 darkModeToggle.addEventListener('change', () => {
-    // Check if the checkbox is checked (activated)
+    const imageElement = document.querySelector('.dark-mode-img');
+    const bottomCard = document.querySelectorAll(".card-bottom")
+    const cardTitle = document.querySelectorAll(".card-details-title")
+    const cardDescription = document.querySelectorAll(".card-details-description")
+    const header1 = document.querySelector(".page__title")
+    const header2 = document.querySelector(".page__description")
+    const tag = document.querySelectorAll(".tech-tag")
+    const footerNav = document.querySelectorAll(".href1")
+    const cards = document.querySelectorAll(".card-inner")
+    // Darkmode active
     if (darkModeToggle.checked) {
         // Add the dark-mode class to the body element
         document.body.classList.add('dark-mode');
@@ -34,7 +37,9 @@ darkModeToggle.addEventListener('change', () => {
         footerNav.forEach((nav) => {
             nav.style.color = "whitesmoke"
         })
-
+        cards.forEach((c) => {
+            addHoverEffect(c)
+        })
         // change color title
         header1.classList.add("white1")
         header2.classList.add("white2")
@@ -69,3 +74,12 @@ darkModeToggle.addEventListener('change', () => {
 });
 
 
+function addHoverEffect(card) {
+    card.addEventListener('mouseenter', () => {
+      card.style.boxShadow = '0px 0px 15px 2px rgba(255, 255, 255, 0.3)';
+    });
+  
+    card.addEventListener('mouseleave', () => {
+      card.style.boxShadow = 'none';
+    });
+  }

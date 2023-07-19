@@ -14,8 +14,6 @@
     <article>
       <div class="page__content">
         <header>
-            <h1 class="page__title">Aleix Fort</h1>    
-            <h2 class="page__description">Ambitious engineer and problem solver</h2>
             <div class="toggle-container">
                 <label class="switch">
                     <input type="checkbox" id="darkModeToggle">
@@ -23,97 +21,110 @@
                 </label>
                 <img class="dark-mode-img" src="img/dark_mode_icon.png" alt="dark mode icon">
             </div>
-
+            <h1 class="page__title">Aleix Fort</h1>    
+            <h2 class="page__description">Ambitious engineer and problem solver</h2>
+            <div class="main-nav-container">
+                <div id="footer-site-nav">
+                  <a href="#" onclick="loadPage('projects.html')">Projects</a>
+                  <a href="#" onclick="loadPage('curriculum.html')">Curriculum</a>
+                  <a href="#" onclick="loadPage('about.html')">About me</a>
+                </div>
+            </div>
         </header>
-        <div class="main-column">
-        <ul class="cards">
-            <li class="card">
-                <div class="card-inner">
-                    <a class="card-thumbnail" href="https://github.com/aleixfortm/storymous">
-                        <img class="img-storymous" src="img/storymous_icon.jpeg">
-                    </a>
-                    <div class="card-bottom">
+        <main id="component">
 
-                        <div class="card-details">
-                            <a class="card-details-title" href="https://github.com/aleixfortm/storymous">Storymous</a>
-                            <div class="card-details-description">Storytelling-based social media, a place where people write fiction together</div>
-                            <div class="tags-container">
-                                <div class="tech-tag vue-tag">Vue</div>
-                                <div class="tech-tag python-tag">Python</div>
-                                <div class="tech-tag flask-tag">Flask</div>
-                                <div class="tech-tag js-tag">JS</div>
-                                <div class="tech-tag mongodb-tag">MongoDB</div>
+            <div class="main-column">
+                <ul class="cards">
+
+                    <li class="card">
+                        <div class="card-inner">
+                            <a class="card-thumbnail" href="https://github.com/aleixfortm/storymous">
+                                <img class="img-storymous" src="img/storymous_icon.jpeg">
+                            </a>
+                            <div class="card-bottom">
+                                <div class="card-details">
+                                    <a class="card-details-title" href="https://github.com/aleixfortm/storymous">Storymous</a>
+                                    <div class="card-details-description">Storytelling-based social media, a place where people write fiction together</div>
+                                    <div class="tags-container">
+                                        <div class="tech-tag vue-tag">Vue</div>
+                                        <div class="tech-tag python-tag">Python</div>
+                                        <div class="tech-tag flask-tag">Flask</div>
+                                        <div class="tech-tag js-tag">JS</div>
+                                        <div class="tech-tag mongodb-tag">MongoDB</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </li>
-
-            <li class="card">
-                <div class="card-inner">
-                    <a class="card-thumbnail" href="https://github.com/aleixfortm/WOLed">
-                        <img class="img-gopher" src="img/gopher.png">
-                    </a>
-                    <div class="card-bottom">
-                        <div class="card-details">
-                            <a class="card-details-title" href="https://github.com/aleixfortm/WOLed">Woled</a>
-                            <div class="card-details-description">An over-engineered, CLI-based WakeOnLAN tool</div>
-                            <div class="tags-container">
-                                <div class="tech-tag go-tag">Go</div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-            </li>
-
-            <li class="card">
-                <div class="card-inner">
-                    <a class="card-thumbnail" href="https://github.com/aleixfortm/bomparty-bot">
-                        <img class="img-bombparty" src="img/bombparty_icon.jpeg">
-                    </a>
-                    <div class="card-bottom">
-                        <div class="card-details">
-                            <a class="card-details-title" href="https://github.com/aleixfortm/bomparty-bot">Bombparty Bot</a>
-                            <div class="card-details-description">Automated webscraping bot that plays bombparty games</div>
-                            <div class="tags-container">
-                                <div class="tech-tag python-tag">Python</div>
-                                <div class="tech-tag selenium-tag">Selenium</div>
-                                <div class="tech-tag html-tag">HTML</div>
+                    </li>
+            
+                    <li class="card">
+                        <div class="card-inner">
+                            <a class="card-thumbnail" href="https://github.com/aleixfortm/WOLed">
+                                <img class="img-gopher" src="img/gopher.png">
+                            </a>
+                            <div class="card-bottom">
+                                <div class="card-details">
+                                    <a class="card-details-title" href="https://github.com/aleixfortm/WOLed">Woled</a>
+                                    <div class="card-details-description">An over-engineered, CLI-based WakeOnLAN tool</div>
+                                    <div class="tags-container">
+                                        <div class="tech-tag go-tag">Go</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </li>
-
-            <li class="card">
-                <div class="card-inner">
-                    <a class="card-thumbnail" href="https://github.com/adrianjch/BionicReadingForTwitter">
-                        <img src="img/bionicreading_icon.png">
-                    </a>
-                    <div class="card-bottom">
-                        <div class="card-details">
-                            <a class="card-details-title" href="https://github.com/adrianjch/BionicReadingForTwitter">BionicReadingForTwitter</a>
-                            <div class="card-details-description">Apply bionic text to Twitter with this Chrome extension</div>
-                            <div class="tags-container">
-                                <div class="tech-tag js-tag">JS</div>
-                                <div class="tech-tag html-tag">HTML</div>
-                                <div class="tech-tag css-tag">CSS</div>
+                    </li>
+            
+                    <li class="card">
+                        <div class="card-inner">
+                            <a class="card-thumbnail" href="https://github.com/aleixfortm/bomparty-bot">
+                                <img class="img-bombparty" src="img/bombparty_icon.jpeg">
+                            </a>
+                            <div class="card-bottom">
+                                <div class="card-details">
+                                    <a class="card-details-title" href="https://github.com/aleixfortm/bomparty-bot">Bombparty Bot</a>
+                                    <div class="card-details-description">Automated webscraping bot that plays bombparty games</div>
+                                    <div class="tags-container">
+                                        <div class="tech-tag python-tag">Python</div>
+                                        <div class="tech-tag selenium-tag">Selenium</div>
+                                        <div class="tech-tag html-tag">HTML</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </li>
+                    </li>
+            
+                    <li class="card">
+                        <div class="card-inner">
+                            <a class="card-thumbnail" href="https://github.com/adrianjch/BionicReadingForTwitter">
+                                <img src="img/bionicreading_icon.png">
+                            </a>
+                            <div class="card-bottom">
+                                <div class="card-details">
+                                    <a class="card-details-title" href="https://github.com/adrianjch/BionicReadingForTwitter">BionicReadingForTwitter</a>
+                                    <div class="card-details-description">Apply bionic text to Twitter with this Chrome extension</div>
+                                    <div class="tags-container">
+                                        <div class="tech-tag js-tag">JS</div>
+                                        <div class="tech-tag html-tag">HTML</div>
+                                        <div class="tech-tag css-tag">CSS</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+        </main>
 
-        </div>
     </article>
-  
     <footer>
-      <div id="footer-site-nav">
-        <a href="https://github.com/aleixfortm" class="href1">GitHub</a>
-        <a href="https://www.linkedin.com/in/aleixfortm/" class="href1">LinkedIn</a>
-      </div>
-    </footer>
-    <script src="darkmode.js"></script>
+        <div id="footer-site-nav">
+            <a href="#" onclick="loadPage('projects.html')">Projects</a>
+            <a href="#" onclick="loadPage('curriculum.html')">Curriculum</a>
+            <a href="#" onclick="loadPage('about.html')">About me</a>
+          </div>
+      </footer>
+
+    <script src="loadpage.js"></script>
 </body>
 </html>

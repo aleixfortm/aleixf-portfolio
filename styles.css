@@ -56,7 +56,7 @@ pre > code,
 .text-column,
 pre > code,
 .page__content > * {
-    max-width: 740px;
+    max-width: 1080px;
 }
 .main-column,
 figure {
@@ -98,6 +98,7 @@ figure {
 .white2 {
     color: rgb(255, 255, 255);
 }
+
 
 html,
 body {
@@ -261,7 +262,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 20px 0 -10px 0;
+    margin: -20px 0 5px 0;
 }
 
 .dark-mode-img {
@@ -403,11 +404,11 @@ header {
     display: block;
     -webkit-box-shadow: 0px 1px 15px 1px rgba(0,0,0,0.08);
     -moz-box-shadow: 0px 1px 15px 1px rgba(0,0,0,0.08);
-    box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.08);
+   
     transition: all 0.4s;
 }
 .card-inner:hover {
-    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.329);
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.5);
 }
 @media screen and (max-width: 480px) {
     .card-inner {
@@ -417,6 +418,14 @@ header {
         box-shadow: none;
     }
 }
+
+.main-nav-container {
+    margin: 20px auto -30px auto;
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+}
+
 .card-thumbnail {
     display: block;
     width: 100%;
@@ -476,7 +485,7 @@ header {
     color: #333;
 }
 footer {
-    margin-top: 100px;
+    margin-top: 30px;
     text-align: center;
     padding-bottom: 20px;
 }
@@ -484,7 +493,6 @@ footer {
     margin: 15px 0 15px 0;
     display: block;
     text-align: center;
-    line-height: 2;
 }
 #footer-site-nav a {
     display: inline-block;

@@ -258,6 +258,22 @@ header {
     justify-content: center;
 }
 
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.icon-img {
+    width: 20px;
+    height: auto;
+}
+
+.spacer5 {
+    margin: 0 9px;
+}
+
 .img-gopher {
     margin-top: 20px;
 }
@@ -503,7 +519,7 @@ footer {
 #footer-site-nav a {
     display: inline-block;
     transition: all 0.3s;
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1;
     color: #000;
     opacity: 0.5;

@@ -18,6 +18,10 @@
     font-weight: 1000;
 }
 
+.job-article {
+    margin: 0 10px 0 10px;
+}
+
 .img-container {
     display: flex;
     justify-content: center;

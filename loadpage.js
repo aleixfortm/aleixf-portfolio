@@ -33,7 +33,8 @@ function checkToggle() {
     const jobPos = document.querySelectorAll(".job-position")
     const jobPlace = document.querySelectorAll(".job-place")
     const jobDesc = document.querySelectorAll(".job-desc")
-
+    const aboutTitle = document.querySelectorAll(".about-title")
+    const aboutText = document.querySelectorAll(".about-text")
     // Darkmode active
     if (darkModeToggle.checked) {
         // Add the dark-mode class to the body element
@@ -78,6 +79,13 @@ function checkToggle() {
             pos.style.color = "rgb(180, 180, 180, 0.85)"
         })
 
+        aboutTitle.forEach((t) => {
+            t.style.color = "#f5f5f5ba"
+        })
+
+        aboutText.forEach((t) => {
+            t.style.color = "rgb(180, 180, 180, 0.85)"
+        })
 
         // change color title
         header1.classList.add("white1")
@@ -124,6 +132,14 @@ function checkToggle() {
 
         jobDesc.forEach((pos) => {
             pos.style.color = "rgba(0, 0, 0, 0.705)"
+        })
+
+        aboutTitle.forEach((t) => {
+            t.style.color = "black"
+        })
+
+        aboutText.forEach((t) => {
+            t.style.color = "black"
         })
     }
 }

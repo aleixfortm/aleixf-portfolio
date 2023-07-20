@@ -5,6 +5,7 @@
 
 .job-all-container {
     display: flex;
+    margin: 0 0 -15px 0;
 }
 
 .job-details-container {
@@ -19,7 +20,7 @@
 }
 
 .job-article {
-    margin: 0 10px 0 10px;
+    margin: 20px 10px 0 10px;
 }
 
 .img-container {

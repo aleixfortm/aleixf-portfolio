@@ -35,6 +35,8 @@ function checkToggle() {
     const jobDesc = document.querySelectorAll(".job-desc")
     const aboutTitle = document.querySelectorAll(".about-title")
     const aboutText = document.querySelectorAll(".about-text")
+    const yearSeparator = document.querySelectorAll(".year-separator")
+
     // Darkmode active
     if (darkModeToggle.checked) {
         // Add the dark-mode class to the body element
@@ -85,6 +87,10 @@ function checkToggle() {
 
         aboutText.forEach((t) => {
             t.style.color = "rgb(180, 180, 180, 0.85)"
+        })
+
+        yearSeparator.forEach((y) => {
+            y.style.color = "rgb(180, 180, 180, 0.85)"
         })
 
         // change color title
@@ -140,6 +146,10 @@ function checkToggle() {
 
         aboutText.forEach((t) => {
             t.style.color = "black"
+        })
+
+        yearSeparator.forEach((y) => {
+            y.style.color = "black"
         })
     }
 }

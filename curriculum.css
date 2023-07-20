@@ -14,7 +14,8 @@
 }
 
 .job-text-details {
-    flex: 1
+    flex: 1;
+    font-weight: 1000;
 }
 
 .img-container {
@@ -23,8 +24,9 @@
     align-items: center;
 }
 
-.place {
+.job-place {
     margin-right: 0px;
+    font-style: italic;
 }
 
 .job-image {
@@ -35,4 +37,6 @@
 
 .job-desc {
     text-align: justify;
+    font-weight:lighter;
+    color: rgba(0, 0, 0, 0.705);
 }

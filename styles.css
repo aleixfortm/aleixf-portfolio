@@ -99,6 +99,10 @@ figure {
     color: rgb(255, 255, 255);
 }
 
+#component {
+    margin: -20px auto 0 auto;
+}
+
 
 html,
 body {
@@ -487,12 +491,12 @@ header {
     color: #333;
 }
 footer {
-    margin-top: 30px;
+    margin: 20px 0 20px 0;
     text-align: center;
     padding-bottom: 20px;
 }
 #footer-site-nav {
-    margin: 15px 0 15px 0;
+    margin: 40px 0 0px 0;
     display: block;
     text-align: center;
 }

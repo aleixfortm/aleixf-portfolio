@@ -25,13 +25,18 @@ export default {
 }
 .text-color-2 {
   color: rgb(255, 174, 0);
-  color: rgb(234, 0, 255);
 }
 .text-color-3 {
-  color: rgb(196, 255, 237);
+  color: rgb(234, 0, 255);
+}
+.text-color-4 {
+  color: rgba(138, 255, 200, 0.808);
 }
 .text-color-def {
   color: rgba(255, 255, 255, 0.8);
+}
+.text-color-extra {
+  color: #648099;
 }
 
 .text-size-title {
@@ -48,6 +53,7 @@ export default {
 #app {
   color: #516e88;
   background-color: #111827;
+  min-height: 100vh;
   font-family: 'Poppins', sans-serif;
 }
 

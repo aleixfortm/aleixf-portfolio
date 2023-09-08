@@ -1,12 +1,12 @@
 <template>
     <div class="intro">
-        <div class="intro-name text-color-1 text-size-title">
+        <div class="intro-name text-color-1">
             Aleix Fort
         </div>
-        <div class="intro-subtitle text-size-subtitle text-color-1">
+        <div class="intro-subtitle text-color-def">
             Graduate Electrical Engineer
         </div>
-        <div class="intro-subtitle text-size-normal text-color-def">
+        <div class="text-color-extra summary">
             I specialize in technical support, web development, and computer engineering
         </div>
     </div>
@@ -30,7 +30,15 @@
     background-color: rgba(211, 211, 211, 0.08);
 }
 */
+.intro-name {
+    font-size: 60px;
+    padding: 0;
+    line-height: 1;
+}
 .intro-subtitle {
-    
+    font-size: 20px;
+}
+.summary {
+    padding-top: 15px;
 }
 </style>

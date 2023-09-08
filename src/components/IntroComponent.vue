@@ -18,13 +18,18 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 10px;
-    max-width: 500px;
+    max-width: 360px;
+    min-width: 360px;
     border-radius: 10px;
+    margin: 80px 20px 10px 10px;
+    height: fit-content;
     transition: 0.2s all;
 }
+/*
 .intro:hover {
     background-color: rgba(211, 211, 211, 0.08);
 }
+*/
 .intro-subtitle {
     
 }

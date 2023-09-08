@@ -25,12 +25,13 @@ export default {
 }
 .text-color-2 {
   color: rgb(255, 174, 0);
+  color: rgb(234, 0, 255);
 }
 .text-color-3 {
   color: rgb(196, 255, 237);
 }
 .text-color-def {
-  color: rgba(255, 255, 255, 0.829);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .text-size-title {
@@ -45,15 +46,21 @@ export default {
     font-size: 16px;
 }
 #app {
-  color: #2c3e50;
+  color: #516e88;
   background-color: #111827;
   font-family: 'Poppins', sans-serif;
-  height: 100vh;
 }
 
 .main {
   display: flex;
   justify-content: center;
+  padding: 10px;
+}
+
+@media (max-width: 1100px) {
+  .main {
+    flex-direction: column;
+  }
 }
 
 

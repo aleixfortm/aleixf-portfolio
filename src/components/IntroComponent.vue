@@ -1,19 +1,30 @@
 <template>
     <div class="intro">
-        <div class="intro-name text-color-1">
-            Aleix Fort
+        <div class="intro-data-box">
+            <div class="intro-name text-color-1">
+                Aleix Fort
+            </div>
+            <div class="intro-subtitle text-color-def">
+                Graduate Electrical Engineer
+            </div>
+            <div class="text-color-extra summary">
+                I specialize in technical support, web development, and computer engineering
+            </div>
         </div>
-        <div class="intro-subtitle text-color-def">
-            Graduate Electrical Engineer
-        </div>
-        <div class="text-color-extra summary">
-            I specialize in technical support, web development, and computer engineering
-        </div>
+        <sections-component></sections-component>
     </div>
+    
 </template>
+
+<script setup>
+import SectionsComponent from './SectionsComponent.vue';
+
+</script>
 
 <style scoped>
 .intro {
+    top: 90px;
+    position: sticky;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -25,11 +36,6 @@
     height: fit-content;
     transition: 0.2s all;
 }
-/*
-.intro:hover {
-    background-color: rgba(211, 211, 211, 0.08);
-}
-*/
 .intro-name {
     font-size: 60px;
     padding: 0;

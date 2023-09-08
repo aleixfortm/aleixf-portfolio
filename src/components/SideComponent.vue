@@ -6,7 +6,8 @@
             <br>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. <span class="text-color-3">Doloremque commodi corporis consequuntur placeat, suscipit repudiandae, quo aut expedita alias </span>harum quidem vel qui optio nobis explicabo mollitia in error! Quidem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. <span class="text-color-1">Veritatis</span> adipisci aliquid laudantium modi quae provident odit voluptatem temporibus iusto fugit! <span class="text-color-2">Sequi exercitationem nostrum ex minima,</span> at architecto tempore aut asperiores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat esse, perspiciatis aliquam aliquid ipsam qui in autem sapiente repellendus magni a accusamus, architecto possimus expedita praesentium rem perferendis ad dolorem!
         </div>
-        <project-card></project-card>
+        <br>
+        <project-card v-for="i in 6" :key="i"></project-card>
     </div>
 </template>
 

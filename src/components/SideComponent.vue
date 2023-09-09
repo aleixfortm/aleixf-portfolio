@@ -6,19 +6,19 @@
             <br>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. <span class="text-color-3">Doloremque commodi corporis consequuntur placeat, suscipit repudiandae, quo aut expedita alias </span>harum quidem vel qui optio nobis explicabo mollitia in error! Quidem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. <span class="text-color-1">Veritatis</span> adipisci aliquid laudantium modi quae provident odit voluptatem temporibus iusto fugit! <span class="text-color-2">Sequi exercitationem nostrum ex minima,</span> at architecto tempore aut asperiores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat esse, perspiciatis aliquam aliquid ipsam qui in autem sapiente repellendus magni a accusamus, architecto possimus expedita praesentium rem perferendis ad dolorem!
         </div>
-        <br>
-        <project-card v-for="i in 6" :key="i"></project-card>
+
+        <div class="state-section-title text-color-def">Projects</div>
+        <project-card v-for="i in 3" :key="i"></project-card>
+        <div class="state-section-title text-color-def">Work</div>
+        <project-card v-for="i in 3" :key="i"></project-card>
+        <div class="state-section-title text-color-def">About me</div>
+        <project-card v-for="i in 3" :key="i"></project-card>
     </div>
 </template>
 
-<script>
+<script setup>
 import ProjectCard from './ProjectCard.vue';
 
-export default {
-    components: {
-        ProjectCard
-    }
-}
 </script>
 
 <style scoped>
@@ -29,5 +29,11 @@ export default {
     text-align: justify;
     overflow-wrap: break-word;
     hyphens: auto;
+}
+.state-section-title {
+    font-size: 22px;
+    margin: 50px 0 0 0;
+    padding: 0 0 0 10px;
+    border-left: 6px solid rgb(0, 255, 136);
 }
 </style>

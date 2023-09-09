@@ -3,15 +3,35 @@
         <div class="outline-marker"></div>
         <div class="sections">
             <div class="section section-intro selected"></div>
-            <div class="section section-projects">Projects</div>
-            <div class="section section-work">Work</div>
-            <div class="text-color-1 section section-about">About me</div>
+            <div class="section section-projects" @click="scrollToSection(1)">Projects</div>
+            <div class="section section-work" @click="scrollToSection(2)">Work</div>
+            <div class="text-color-1 section section-about" @click="scrollToSection(3)">About me</div>
         </div>
     </div>
 </template>
 
 <script>
+import { mapState } from 'pinia'
+import { useStateStore } from '@/store.js'
 
+export default {
+  methods: {
+    scrollToSection(section) {
+      // Adjust the pixel value (500 in this example) to your desired scroll position.
+      const scrollPosition = section * 450;
+      
+      // Use window.scrollTo to scroll to the specified position.
+      window.scrollTo({
+        top: scrollPosition,
+        behavior: 'smooth', // Add smooth scrolling animation
+      });
+    },
+  },
+  computed: {
+    ...mapState(useStateStore, ['getState']),
+    
+  }
+};
 </script>
 
 <style scoped>
@@ -39,7 +59,7 @@
     display: flex;
     position: relative;
     width: 100%;
-    margin-top: 5px;
+    margin-top: 25px;
     border-left: 1px solid rgba(82, 82, 89, .32);
     line-height: 1.8;
     padding: 60px 0 0 15px;

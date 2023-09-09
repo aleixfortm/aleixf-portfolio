@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia';
 
-export const stateStore = defineStore('stateStore', {
+export const useStateStore = defineStore('stateStore', {
     state: () => ({
         stateData: '',
     }),
@@ -10,6 +10,7 @@ export const stateStore = defineStore('stateStore', {
     actions: {
         setState(value) {
             this.stateData = value;
+            console.log(this.stateData)
         },
     },
 });

@@ -6,22 +6,25 @@
             in software development such as web applications, and systems programming with microcontrollers. I have also got plenty of technical support engineering experience after internships
             at <a href="https://www.ni.com/" class="text-color-4 link">NI</a> and <a href="https://www.criteo.com" class="text-color-4 link">Criteo</a>, great multinational companies.
             <br><br>
-            In my free time I enjoy reading books- especially sci-fi novels, practicing gymnastics and martial arts, and of course working on some tech projects of my own.
+            In my free time I enjoy reading books- especially sci-fi novels-, practicing gymnastics and martial arts, and of course working on some tech projects of my own.
         </div>
 
         <section class="whole-section" data-section="projects">
             <div class="state-section-title text-color-def">Projects</div>
-            <project-card v-for="i in 4" :key="i"></project-card>
+            <storymous-card></storymous-card>
+            <woled-card></woled-card>
+            <bombparty-card></bombparty-card>
+            <bionicreading-card></bionicreading-card>
         </section>
 
         <section class="whole-section" data-section="work">
             <div class="state-section-title text-color-def">Experience</div>
-            <project-card v-for="i in 6" :key="i"></project-card>
+            <project-card v-for="i in 6" :key="i" :data="projects[0]"></project-card>
         </section>
 
         <section class="whole-section" data-section="about">
             <div class="state-section-title text-color-def" >About me</div>
-            <project-card v-for="i in 3" :key="i"></project-card>
+            <project-card v-for="i in 3" :key="i" :data="projects[0]"></project-card>
         </section>
 
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -31,7 +34,11 @@
 
 <script setup>
 import { useStateStore } from '@/store';
-import ProjectCard from './ProjectCard.vue';
+import ProjectCard from './projects/ProjectCard.vue';
+import StorymousCard from "@/components/projects/StorymousCard.vue"
+import WoledCard from './projects/WoledCard.vue';
+import BombpartyCard from './projects/BombpartyCard.vue';
+import BionicreadingCard from './projects/BionicreadingCard.vue';
 import { onMounted } from 'vue'; // Import onMounted from Vue
 
 const store = useStateStore();
@@ -54,6 +61,16 @@ onMounted(() => {
     observer.observe(section);
   });
 });
+
+import { ref } from 'vue';
+// data to pass
+const projects = ref([
+    {
+        title: "Bionic Reading for Twitter",
+        description: "Apply bionic text to Twitter with this Chrome extension.",
+        image: "storymous-forest.png"
+    }
+])
 </script>
 
 

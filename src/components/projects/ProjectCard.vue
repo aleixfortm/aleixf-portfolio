@@ -4,8 +4,8 @@
             <img :src="imgSrc" alt="Img">
         </div>
         <div class="card-data">
-            <div class="card-data-title text-color-def">Storymous</div>
-            <div class="card-data-description text-color-extra">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel beatae nostrum suscipit corrupti earum nulla autem debitis est enim quaerat, ipsam accusantium iste rem ullam neque saepe blanditiis voluptas sint!</div>
+            <div class="card-data-title text-color-def">{{ data.title }}</div>
+            <div class="card-data-description text-color-extra">{{ data.description }}</div>
         </div>
         
     </div>
@@ -16,8 +16,11 @@ export default {
     props: ["data"],
     computed: {
         imgSrc() {
-            return require("@/assets/img/storymous-forest.png")
+            return require(`@/assets/img/${this.data.image}`)
         }
+    },
+    mounted() {
+        console.log(this.data)
     }
 }
 </script>

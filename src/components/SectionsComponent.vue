@@ -1,11 +1,10 @@
 <template>
     <div class="content">
-        <div class="outline-marker"></div>
+        <div class="outline-marker" :style="{ bottom: outlineMarkerBottom }"></div>
         <div class="sections">
-            <div class="section section-intro selected"></div>
-            <div class="section section-projects" @click="scrollToSection(1)">Projects</div>
-            <div class="section section-work" @click="scrollToSection(2)">Work</div>
-            <div class="text-color-1 section section-about" @click="scrollToSection(3)">About me</div>
+            <div class="section section-projects" :class="{ 'text-color-1': selectedSection === 'projects' }" @click="scrollToSection(1)">Projects</div>
+            <div class="section section-work" :class="{ 'text-color-1': selectedSection === 'work' }" @click="scrollToSection(2)">Work</div>
+            <div class="section section-about" :class="{ 'text-color-1': selectedSection === 'about' }" @click="scrollToSection(3)">About me</div>
         </div>
     </div>
 </template>
@@ -15,6 +14,11 @@ import { mapState } from 'pinia'
 import { useStateStore } from '@/store.js'
 
 export default {
+  data() {
+    return {
+      selectedSection: "projects"
+    }
+  },
   methods: {
     scrollToSection(section) {
       // Adjust the pixel value (500 in this example) to your desired scroll position.
@@ -26,10 +30,23 @@ export default {
         behavior: 'smooth', // Add smooth scrolling animation
       });
     },
+    updateSelectedSection(section) {
+      this.selectedSection = section
+    }
   },
   computed: {
     ...mapState(useStateStore, ['getState']),
-    
+    outlineMarkerBottom() {
+      this.updateSelectedSection(this.getState)
+      if (this.getState === 'projects') {
+        return '59px';
+      } else if (this.getState === 'work') {
+        return '30px';
+      } else {
+        return '0px';
+      }
+      
+    },
   }
 };
 </script>
@@ -39,7 +56,6 @@ export default {
     position: absolute;
     width: 2px;
     height: 28px;
-    bottom: 0px;
     left: -2px;
     background-color: rgb(0, 255, 136);
     box-shadow: 0px 0px 10px 1px rgba(0, 255, 136, 0.3);
@@ -47,11 +63,11 @@ export default {
 }
 .section {
     cursor: pointer;
+    transition: all 0.2s;
 }
 .section:hover {
-    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.8);
 }
-
 .section-intro {
     color: white;
 }

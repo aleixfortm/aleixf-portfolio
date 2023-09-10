@@ -1,29 +1,21 @@
 <template>
-    <div class="card" @click="redirectURL">
-        <div class="img-container">
-            <img src="@/assets/img/gopher.png" alt="Img">
-        </div>
-        <div class="card-data">
-            <div class="card-data-title text-color-def">Woled</div>
-            <div class="card-data-description text-color-extra">A user-friendly CLI Wake-on-LAN tool. Add your own devices, edit config data and broadcast WOL packets through a CLI application.</div>
-            <div class="tags">
-                <div class="tag text-color-4">Golang</div>
-                <div class="tag text-color-4">Cobra</div>
+    <a href="https://github.com/aleixfortm/woled" style="text-decoration: none;">
+        <div class="card">
+            <div class="img-container">
+                <img src="@/assets/img/gopher.png" alt="Img">
             </div>
+            <div class="card-data">
+                <div class="card-data-title text-color-def">Woled</div>
+                <div class="card-data-description text-color-extra">A user-friendly CLI Wake-on-LAN tool. Add your own devices, edit config data and broadcast WOL packets through a CLI application.</div>
+                <div class="tags">
+                    <div class="tag text-color-4">Golang</div>
+                    <div class="tag text-color-4">Cobra</div>
+                </div>
+            </div>
+            
         </div>
-        
-    </div>
+    </a>
 </template>
-
-<script>
-export default {
-    methods: {
-        redirectURL() {
-            window.location.href = 'https://github.com/aleixfortm/woled';
-        }
-    }
-}
-</script>
 
 <style scoped>
 .tags {

@@ -12,6 +12,13 @@
             </div>
         </div>
         <sections-component></sections-component>
+        <div class="curious-data">
+            Designed and coded by me, using
+        </div>
+        <div class="tags">
+            <div class="tag text-color-4">Vue 3</div>
+            <div class="tag text-color-4">Pinia</div>
+        </div>
     </div>
     
 </template>
@@ -22,6 +29,20 @@ import SectionsComponent from './SectionsComponent.vue';
 </script>
 
 <style scoped>
+.tags {
+    display: flex;
+    margin-top: 5px;
+}
+.tag {
+    padding: 1px 8px;
+    font-size: 14px;
+    margin: 0 5px 0 0;
+    background-color:rgba(138, 138, 138, 0.205);
+    border-radius: 10px;
+}
+.curious-data {
+    margin: 400px 0 0 0;
+}
 .intro {
     top: 90px;
     position: sticky;

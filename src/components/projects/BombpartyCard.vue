@@ -1,28 +1,20 @@
 <template>
-    <div class="card" @click="redirectURL">
-        <div class="img-container">
-            <img src="@/assets/img/bombparty_icon.jpeg" alt="Img">
-        </div>
-        <div class="card-data">
-            <div class="card-data-title text-color-def">Bombparty bot</div>
-            <div class="card-data-description text-color-extra">Webscraping bot that plays bombparty games autonomously.</div>
-            <div class="tags">
-                <div class="tag text-color-4">Python</div>
-                <div class="tag text-color-4">Selenium</div>
+    <a href="https://github.com/aleixfortm/bomparty-bot" style="text-decoration: none;">
+        <div class="card">
+            <div class="img-container">
+                <img src="@/assets/img/bombparty_icon.jpeg" alt="Img">
+            </div>
+            <div class="card-data">
+                <div class="card-data-title text-color-def">Bombparty bot</div>
+                <div class="card-data-description text-color-extra">Webscraping bot that plays bombparty games autonomously.</div>
+                <div class="tags">
+                    <div class="tag text-color-4">Python</div>
+                    <div class="tag text-color-4">Selenium</div>
+                </div>
             </div>
         </div>
-    </div>
+    </a>
 </template>
-
-<script>
-export default {
-    methods: {
-        redirectURL() {
-            window.location.href = 'https://github.com/aleixfortm/bomparty-bot';
-        }
-    }
-}
-</script>
 
 <style scoped>
 .tags {

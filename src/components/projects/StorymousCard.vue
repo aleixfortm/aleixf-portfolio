@@ -1,32 +1,23 @@
 <template>
-    <div class="card" @click="redirectURL">
-        <div class="img-container">
-            <img src="@/assets/img/storymous-forest.png" alt="Img">
-        </div>
-        <div class="card-data">
-            <div class="card-data-title text-color-def">Storymous</div>
-            <div class="card-data-description text-color-extra">Unique social media platform centered around storytelling where users are empowered to start and continue existing stories dynamically through a chapter-based system.</div>
-            <div class="tags">
-                <div class="tag text-color-4">Vue.js</div>
-                <div class="tag text-color-4">JavaScript</div>
-                <div class="tag text-color-4">Python</div>
-                <div class="tag text-color-4">Flask</div>
-                <div class="tag text-color-4">MongoDB</div>
+    <a href="https://www.storymous.com" style="text-decoration: none;">
+        <div class="card">
+            <div class="img-container">
+                <img src="@/assets/img/storymous-forest.png" alt="Img">
+            </div>
+            <div class="card-data">
+                <div class="card-data-title text-color-def">Storymous</div>
+                <div class="card-data-description text-color-extra">Unique social media platform centered around storytelling where users are empowered to start and continue existing stories dynamically through a chapter-based system.</div>
+                <div class="tags">
+                    <div class="tag text-color-4">Vue.js</div>
+                    <div class="tag text-color-4">JavaScript</div>
+                    <div class="tag text-color-4">Python</div>
+                    <div class="tag text-color-4">Flask</div>
+                    <div class="tag text-color-4">MongoDB</div>
+                </div>
             </div>
         </div>
-        
-    </div>
+    </a>
 </template>
-
-<script>
-export default {
-    methods: {
-        redirectURL() {
-            window.location.href = 'https://www.storymous.com';
-        }
-    }
-}
-</script>
 
 <style scoped>
 .tags {

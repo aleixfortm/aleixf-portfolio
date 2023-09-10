@@ -53,7 +53,7 @@ import SectionsComponent from './SectionsComponent.vue';
     max-width: 360px;
     min-width: 360px;
     border-radius: 10px;
-    margin: 80px 20px 10px 10px;
+    margin: 80px 60px 10px 10px;
     height: fit-content;
     transition: 0.2s all;
 }

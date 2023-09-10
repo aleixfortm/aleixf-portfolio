@@ -1,29 +1,13 @@
 <template>
     <div class="card">
-        <div class="img-container">
-            <img :src="imgSrc" alt="Img">
-        </div>
+        <div class="img-container"></div>
         <div class="card-data">
-            <div class="card-data-title text-color-def">{{ data.title }}</div>
-            <div class="card-data-description text-color-extra">{{ data.description }}</div>
+            <div class="card-data-title text-color-def">Dummy title</div>
+            <div class="card-data-description text-color-extra">This description and details are under construction... Coming soon!</div>
         </div>
         
     </div>
 </template>
-
-<script>
-export default {
-    props: ["data"],
-    computed: {
-        imgSrc() {
-            return require(`@/assets/img/${this.data.image}`)
-        }
-    },
-    mounted() {
-        console.log(this.data)
-    }
-}
-</script>
 
 <style scoped>
 .card {
@@ -49,12 +33,9 @@ export default {
 }
 .img-container {
     margin: 0 20px 0 0;
-}
-.img-container img {
+    width: 100px;
+    height: 40px;
     border-radius: 5px;
-    width: 240px;
-    height: 120px;
-    object-fit: cover;
-    transition: all 0.3s;
+    background-color: rgb(116, 116, 116);
 }
 </style>

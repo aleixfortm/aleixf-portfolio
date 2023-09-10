@@ -22,7 +22,15 @@ export default {
   methods: {
     scrollToSection(section) {
       // Adjust the pixel value (500 in this example) to your desired scroll position.
-      const scrollPosition = section * 450;
+      var scrollPosition = 0;
+      if (section === 1) {
+        scrollPosition = 350
+      } else if (section === 2) {
+        scrollPosition = 1030
+      } else {
+        scrollPosition = 1570
+      }
+
       
       // Use window.scrollTo to scroll to the specified position.
       window.scrollTo({

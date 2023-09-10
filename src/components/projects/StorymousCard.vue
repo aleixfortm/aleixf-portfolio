@@ -1,8 +1,8 @@
 <template>
-    <a href="https://www.storymous.com" style="text-decoration: none;">
-        <div class="card">
+    <a href="https://www.storymous.com" style="text-decoration: none;" class="whole-card">
+        <div class="card" @mouseover="zoomIn" @mouseout="zoomOut">
             <div class="img-container">
-                <img src="@/assets/img/storymous-forest.png" alt="Img">
+                <img src="@/assets/img/storymous-forest.png" alt="Img" :class="{ zoomeds: isZoomed }">
             </div>
             <div class="card-data">
                 <div class="card-data-title text-color-def">Storymous</div>
@@ -19,7 +19,29 @@
     </a>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      isZoomed: false,
+    };
+  },
+  methods: {
+    zoomIn() {
+      this.isZoomed = true;
+    },
+    zoomOut() {
+      this.isZoomed = false;
+    },
+  },
+};
+</script>
+
 <style scoped>
+.zoomed {
+    transform: scale(1.1);
+    z-index: 999;
+}
 .tags {
     display: flex;
     margin-top: 5px;
@@ -39,10 +61,10 @@
     margin: 10px 0 0 0;
     padding: 10px;
     cursor: pointer;
-    transition: all 0.1s;
+    transition: all 0.2s;
 }
 .card:hover {
-    background-color: rgba(211, 211, 211, 0.07);
+    background-color: rgba(112, 112, 112, 0.089);
 }
 .card-data-title {
     line-height: 1;
@@ -60,6 +82,15 @@
     width: 240px;
     height: 120px;
     object-fit: cover;
-    transition: all 0.3s;
+    transition: transform 0.6s;
+}
+
+@media (max-width: 700px) {
+  .card {
+    flex-direction:column-reverse;
+  }
+  .card-data {
+    margin-bottom: 10px;
+  }
 }
 </style>

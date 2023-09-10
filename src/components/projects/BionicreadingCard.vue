@@ -69,4 +69,12 @@ export default {
     object-position: center 43%;
     transition: all 0.3s;
 }
+@media (max-width: 700px) {
+  .card {
+    flex-direction:column-reverse;
+  }
+  .card-data {
+    margin-bottom: 10px;
+  }
+}
 </style>

@@ -56,7 +56,7 @@ import SectionsComponent from './SectionsComponent.vue';
     min-width: 360px;
     border-radius: 10px;
     margin: 0px 50px 0px 10px;
-    max-height: 92vh;
+    max-height: 90vh;
     transition: 0.2s all;
 }
 .intro-name {

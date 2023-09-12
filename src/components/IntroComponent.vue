@@ -13,11 +13,11 @@
         </div>
         <sections-component></sections-component>
         <div class="curious-data">
-            Designed and coded by me, using
-        </div>
-        <div class="tags">
-            <div class="tag text-color-4">Vue 3</div>
-            <div class="tag text-color-4">Pinia</div>
+            <span>Designed and coded by me, using</span>
+            <div class="tags">
+                <div class="tag text-color-4">Vue 3</div>
+                <div class="tag text-color-4">Pinia</div>
+            </div>
         </div>
     </div>
     
@@ -41,20 +41,22 @@ import SectionsComponent from './SectionsComponent.vue';
     border-radius: 10px;
 }
 .curious-data {
-    margin: 400px 0 0 0;
+    position: absolute;
+    margin-bottom: 10px;
+    bottom: 0;
 }
 .intro {
-    top: 90px;
     position: sticky;
     display: flex;
+    top: 8vh;
     flex-direction: column;
     align-items: flex-start;
     padding: 10px;
     max-width: 360px;
     min-width: 360px;
     border-radius: 10px;
-    margin: 80px 60px 10px 10px;
-    height: fit-content;
+    margin: 0px 50px 0px 10px;
+    max-height: 92vh;
     transition: 0.2s all;
 }
 .intro-name {

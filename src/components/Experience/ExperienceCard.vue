@@ -7,10 +7,7 @@
             <div class="card-data">
                 <div class="title-link-container">
                     <div class="card-data-title text-color-def">Storymous</div>
-                    <a class="repo" href="https://github.com/aleixfortm/storymous">
-                      <img src="@/assets/img/gh.png" alt="github logo" class="gh-logo">
-                      <span class="text-color-4 gh">repository</span>
-                    </a>
+                    <div class="text-color-4 gh">repo<img src="@/assets/img/gh.png" alt="github logo" class="gh-logo"></div>
                 </div> 
                 <div class="card-data-description text-color-extra">Unique social media platform centered around storytelling where users are empowered to start and continue existing stories dynamically through a chapter-based system.</div>
                 <div class="tags">
@@ -44,21 +41,21 @@ export default {
 </script>
 
 <style scoped>
-.repo:hover {
-  filter: brightness(70%);
-  transition: all 0.3s;
-}
 .title-link-container {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-bottom: 6px;
+  justify-content: space-between;
 }
 .gh-logo {
-  height: 18px;
+  height: 17px;
   width: auto;
   filter: brightness(150%);
-  margin-left: 15px;
+  margin-left: 5px;
+  transition: 0.2s all;
+}
+.gh-logo:hover {
+  height: 17px;
+  width: auto;
+  filter: brightness(90%);
 }
 .gh {
   font-size: 13px;
@@ -94,7 +91,7 @@ export default {
 }
 .card-data-title {
     line-height: 1;
-    
+    margin-bottom: 6px;
     width: fit-content;
 }
 .card-data-title:hover {

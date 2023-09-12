@@ -82,7 +82,7 @@ const projects = ref([
 <style scoped>
 .block {
     max-width: 900px;
-    margin-top: 80px;
+    margin-top: 8vh;
     padding: 10px;
     text-align: justify;
     overflow-wrap: break-word;

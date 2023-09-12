@@ -60,7 +60,7 @@ export default {
 .main {
   display: flex;
   justify-content: center;
-  padding: 10px;
+  min-height: 100vh;
 }
 
 @media (max-width: 1100px) {

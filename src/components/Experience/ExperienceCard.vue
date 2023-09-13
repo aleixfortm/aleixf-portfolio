@@ -1,25 +1,18 @@
 <template>
-    <a href="https://www.storymous.com" style="text-decoration: none;" class="whole-card">
+    <div class="whole-card">
         <div class="card" @mouseover="zoomIn" @mouseout="zoomOut">
-            <div class="img-container">
-                <img src="@/assets/img/storymous-forest.png" alt="Img" :class="{ zoomeds: isZoomed }">
-            </div>
             <div class="card-data">
                 <div class="title-link-container">
-                    <div class="card-data-title text-color-def">Storymous</div>
-                    <div class="text-color-4 gh">repo<img src="@/assets/img/gh.png" alt="github logo" class="gh-logo"></div>
+                    <div class="card-data-title text-color-def">{{ data.position }}</div>
+                    <div class="data-column">
+                      <div class="text-color-4 company">{{ data.company }}</div>
+                      <div class="text-color-def location">{{ data.location }}</div>
+                    </div>
                 </div> 
-                <div class="card-data-description text-color-extra">Unique social media platform centered around storytelling where users are empowered to start and continue existing stories dynamically through a chapter-based system.</div>
-                <div class="tags">
-                    <div class="tag text-color-4">Vue.js</div>
-                    <div class="tag text-color-4">JavaScript</div>
-                    <div class="tag text-color-4">Python</div>
-                    <div class="tag text-color-4">Flask</div>
-                    <div class="tag text-color-4">MongoDB</div>
-                </div>
+                <div class="card-data-description text-color-extra">{{ data.description }}</div>
             </div>
         </div>
-    </a>
+    </div>
 </template>
 
 <script>
@@ -29,6 +22,7 @@ export default {
       isZoomed: false,
     };
   },
+  props: ["data"],
   methods: {
     zoomIn() {
       this.isZoomed = true;
@@ -45,12 +39,26 @@ export default {
   display: flex;
   justify-content: space-between;
 }
+.company {
+
+}
+.data-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
 .gh-logo {
   height: 17px;
   width: auto;
   filter: brightness(150%);
   margin-left: 5px;
   transition: 0.2s all;
+}
+.date {
+  min-width: fit-content;
+  margin: 0px 25px 0 0;
+  font-size: 15px;
+  line-height: 1;
 }
 .gh-logo:hover {
   height: 17px;
@@ -93,9 +101,6 @@ export default {
     line-height: 1;
     margin-bottom: 6px;
     width: fit-content;
-}
-.card-data-title:hover {
-    text-decoration: underline;
 }
 .img-container {
     margin: 0 20px 0 0;

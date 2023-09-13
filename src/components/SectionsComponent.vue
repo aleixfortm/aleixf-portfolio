@@ -4,7 +4,7 @@
         <div class="sections">
             <div class="section section-projects" :class="{ 'text-color-1': selectedSection === 'projects' }" @click="scrollToSection(1)">Projects</div>
             <div class="section section-work" :class="{ 'text-color-1': selectedSection === 'work' }" @click="scrollToSection(2)">Experience</div>
-            <div class="section section-about" :class="{ 'text-color-1': selectedSection === 'about' }" @click="scrollToSection(3)">About me</div>
+            <div class="section section-about" :class="{ 'text-color-1': selectedSection === 'about' }" @click="scrollToSection(3)">Blog</div>
         </div>
     </div>
 </template>
